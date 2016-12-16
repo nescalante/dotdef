@@ -1,0 +1,30 @@
+{
+  "name": "dotdef",
+  "version": "0.0.1",
+  "description": "Dot defined objects",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "dot",
+    "define"
+  ],
+  "author": "Nicolas Escalante <nlante@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nescalante/dotdef.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nescalante/dotdef/issues"
+  },
+  "homepage": "https://github.com/nescalante/dotdef#readme"
+}
