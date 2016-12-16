@@ -37,4 +37,24 @@ describe('dotDefine', () => {
       }
     });
   });
+
+  it('support arrays', () => {
+    const result = dotDefine({
+      'foo.bar': [{
+        'baz.quux': [123]
+      }],
+      'foo.baz': 456
+    });
+
+    assert.deepEqual(result, {
+      foo: {
+        bar: [{
+          baz: {
+            quux: [123]
+          }
+        }],
+        baz: 456
+      }
+    });
+  });
 });
