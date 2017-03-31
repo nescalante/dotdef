@@ -1,4 +1,4 @@
-# dotdef [![Build Status](https://travis-ci.org/nescalante/dotdef.svg?branch=master)](https://travis-ci.org/nescalante/dotdef)
+# dotdef [![Build Status](https://travis-ci.org/nescalante/dotdef.svg?branch=master)](https://travis-ci.org/nescalante/dotdef) [![Greenkeeper badge](https://badges.greenkeeper.io/nescalante/dotdef.svg)](https://greenkeeper.io/)
 
 > Dot definition for objects
 
