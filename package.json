@@ -1,6 +1,6 @@
 {
   "name": "dotdef",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Dot defined objects",
   "main": "index.js",
   "directories": {
