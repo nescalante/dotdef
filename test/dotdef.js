@@ -10,7 +10,7 @@ describe('dotDefine', () => {
       }
     });
 
-    assert.deepEqual(result, {
+    assert.deepStrictEqual(result, {
       foo: {
         bar: {
           baz: 123,
@@ -28,7 +28,7 @@ describe('dotDefine', () => {
       'foo.bar.quux': 456
     });
 
-    assert.deepEqual(result, {
+    assert.deepStrictEqual(result, {
       foo: {
         bar: {
           baz: 123,
@@ -46,7 +46,7 @@ describe('dotDefine', () => {
       'foo.baz': 456
     });
 
-    assert.deepEqual(result, {
+    assert.deepStrictEqual(result, {
       foo: {
         bar: [{
           baz: {

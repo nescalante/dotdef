@@ -42,20 +42,16 @@ function dotDefine(obj, keySeparator) {
   function deepMerge(target, source) {
     if (isObject(target) && isObject(source)) {
       for (var key in source) {
-        var result = {};
-
-        if (isObject(source[key])) {
+        if (Array.isArray(source[key])) {
+          target[key] = source[key];
+        } else if (isObject(source[key])) {
           if (!target[key]) {
-            result[key] = {};
-
-            Object.assign(target, result);
+            target[key] = {};
           }
 
           deepMerge(target[key], source[key]);
         } else {
-          result[key] = source[key];
-
-          Object.assign(target, result);
+          target[key] = source[key];
         }
       }
     }
